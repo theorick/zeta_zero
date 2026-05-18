@@ -4,7 +4,7 @@ Real-time visualization of the Riemann Zeta function on the critical line using 
 
 This project animates the trajectory of:
 
-zeta(s) = 1/2 +it
+zeta(1/2 +it)
 
 inside the complex plane and highlights approximate non-trivial zeros when the trajectory approaches the origin.
 
@@ -28,6 +28,12 @@ zeta(s)=sum(1/n^s)
 
 
 This visualization evaluates the function along the critical line:
+
+which lies outside the region where the original series converges.
+
+To evaluate the function on the critical line, an analytic continuation of the Riemann Zeta function is required. This extension allows \( \zeta(s) \) to be computed over almost the entire complex plane while preserving its analytical properties.
+
+The visualization therefore relies on the analytically continued form of the zeta function in order to compute:
 
 
 s=0.5+it
